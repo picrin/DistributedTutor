@@ -1,2 +1,17 @@
 DistributedTutor
 ================
+What is DistributedTutor?
+================
+DistributedTutor is a web application, which facilitates tutoring of possibly large groups of people trying to learn how to program. Examples of such groups are: school and univerisity classes, summer workshops, hackathons, etc. Our main assumption is that all members of the group can physically interact with other members of the group, and the problems they have need immediate, solution-oriented 1:1 tutoring on what they are stuck on. Moreover, we believe that tutors and learners are the same enitity. Because all people have different learning curves and might have had different programming experience the members of the learner groups will very quickly start to tutor each other. Thus we do not distinguish tutors from learners: in our system every user can pick other user's problem. Moreover, our solution is meant to be quick, immediate and deeply personal. It's equally about getting to know your groupmates, creating a spirit of team work, and learning and teaching programming. To make it more fun we introduce a system of points and badges, which could additionaly help the group administrator see which members are the most active and effective.
+================
+I don't like reading. What is DistributedTutor?
+================
+1) A web solution that helps to tutor groups of programming learners.
+2) Works good for school and university classes, summer workshops and hackathons.
+3) Every user is both a learner and a tutor. Every user can pick other user's problems.
+4) There is a reward system for the most active users.
+5) Open the file prototype.html in your browser for graphical explanation.
+================
+What DistributedTutor is not?
+================
+DistributedTutor is not a Q&A website -- the user doesn't even have post a description of their problem. The stress is put on hashtags -- when a user needs help, which requires, i.e. python knowledge they just post a hashtag #pythonmaster, when the problem lies in optimisation, they can type #optimisation, etc. For long standing problems we believe Q&A websites remain an optimal solution.
