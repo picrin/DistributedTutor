@@ -1,0 +1,28 @@
+<div id="content" style="background-color:#EEEEEE;height:300px;width:800px;float:left;">
+<table border="1">
+	<tr>
+		<td><b>description</b></td>
+		<td><b>hashtags</b></td>
+		<td><b>nickname</b></td>
+		<td><b>class</b></td>
+		<td><b>location</b></td>
+		<td><b>status</b></td>
+		<td><b>pick it!</b></td>
+	</tr>
+	{% for problem in problems %}
+	<tr>
+		<td>{{ problem.description }}</td>
+		<td>{{ problem.hashtags }}</td>
+		<td>{{ problem.username }}</td>
+		<td>{{ problem.klasa }}</td>
+		<td>{{ problem.location }}</td>
+		<td>{{ problem.status }}</td>
+		<td>
+			<form action="/pickProblem" method="post">
+				<div><button type="submit">pick</div>
+			</form>
+		</td>
+	</tr>
+	{% endfor %}
+
+</table>

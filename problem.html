@@ -1,0 +1,15 @@
+<!-- This panel contains html forms, which users can send to the server in order manage their problem -->
+
+<div id="problem" style="background-color:#FFD700;height:300px;width:130px;float:left;">
+	<form action="/activate_problem" method="post">
+		<div><textarea name="username" rows="1" cols="15"></textarea></div>
+		<div><textarea name="content" rows="3" cols="15"></textarea></div>
+		<div><input type="submit" value="activate"></div>
+	</form>
+	<form action="/drop_problem" method="post">
+		<div><button type="button">drop</button></div>
+	</form>
+	<form action="/solved_problem" method="post">
+		<div><button type="button">solved</button></div>
+	</form>
+</div>
