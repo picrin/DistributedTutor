@@ -51,12 +51,16 @@ class Problem(db.Model):
 	klasa = db.StringProperty()
 	location = db.StringProperty()
 	problem = db.BooleanProperty()
-	status = db.StringProperty() #TODO allow only: "active", "picked" and "solved"
+	status = db.StringProperty(choices=set(["unsolved", "picked", "solved"])) #TODO allow only: "active", "picked" and "solved"
 	picked_by = db.StringProperty() #TODO point to a user
 	date = db.DateTimeProperty(auto_now_add=True)
 	def __str__(self):
 		return "problem by user: " + str(self.username)
-
+class User(db.Model):
+	self.nickname = db.StringProperty()
+	self.klasa = db.StringProperty()
+	self.location = db.StringProperty()
+	self.problem = db.
 class ActivateProblem(webapp2.RequestHandler):
 	def post(self):
 		username = self.request.get('username')
